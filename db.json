@@ -1,9 +1,0 @@
-{
-  "DEBUG": true,
-  "SQLALCHEMY_DATABASE_URI": "sqlite:///esb.db",
-  "SQLALCHEMY_TRACK_MODIFICATIONS": {},
-  "THREADS_PER_PAGE": 2,
-  "CSRF_ENABLED": true,
-  "CSRF_SESSION_KEY": "secret",
-  "SECRET_KEY": "secret"
-  }
