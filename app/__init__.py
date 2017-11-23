@@ -9,19 +9,4 @@
 
 # print(app)
 # print(db)
-from flask import Flask
 
-class Instance():
-    def __init__(self, name, host, port):
-        self.name = name
-        self.host = host
-        self.port = port
-        self.debug = True
-    
-    def initialize(self):
-        app = Flask(self.name)
-
-        return app
-
-    def start(self, app):
-        app.run(host=self.host, port=self.port, debug=self.debug)
