@@ -1,6 +1,7 @@
 from app.connectors.db import DatabaseConnector
 from app.models.instance import Instance
 from app import config_verify
+from flask import render_template
 
 config = config_verify()
 
@@ -9,3 +10,7 @@ app = instance.initialize()
 connection = DatabaseConnector("sqlite:///" + instance.name + ".db")
 db = connection.connect(app)
 instance.start(app)
+
+app.route('/')
+def index():
+    return render_template('index.html')
