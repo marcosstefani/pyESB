@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'Fontin Sans Regular';
+    src: url("fonts/Fontin_Sans_R_45b.otf") format("opentype");
+}
+
+body {
+    margin: 0;
+    font-family: Fontin Sans Regular;
+}
+
+header nav {
+    background-color: #e7e7e7;
+    box-shadow: inset 0px -5px 30px 0 rgba(0, 0, 0, 0.14);
+    height: 30px;
+    position: relative;
+    padding-top: 10px;
+}
+
+header nav::before {
+    content: "PyESB";
+    background-image: url('/static/img/python.svg');
+    background-repeat: no-repeat;
+    height: 20px;
+    display: inline;
+    padding-left: 25px;
+    margin-left: 20px;
+    font-weight: bold;
+    color: #3675e7;
+    font-size: 1.2em;
+}
+
+header nav ul {
+    text-align: left;
+    list-style-type: none;
+    list-style: none;
+    margin: 0;
+    display: inline;
+    padding-left: 20px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    padding: 0 10px 0 10px;
+    color: #363636;
+}
