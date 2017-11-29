@@ -3,13 +3,15 @@
     <head>
         <meta charset="utf-8">
         <title>PyESB | Home</title>
-        <!-- <link type="text/css" rel="stylesheet" media="all" href="/WINE/default/template-resources/build/home.css"> -->
+        <link type="text/css" rel="stylesheet" media="all" href="{{url_for('static', filename='css/style.css')}}">
     </head>
     <body>
         <header>
             <nav>
-                <a href="/">Home</a>
-                <a href="/connectors">Connectors</a>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/connectors">Connectors</a></li>
+                </ul>
             </nav>
         </header>
     </body>

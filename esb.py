@@ -9,8 +9,9 @@ instance = Instance(__name__, config['address'], config['port'])
 app = instance.initialize()
 connection = DatabaseConnector("sqlite:///" + instance.name + ".db")
 db = connection.connect(app)
-instance.start(app)
 
-app.route('/')
+@app.route('/')
 def index():
     return render_template('index.html')
+
+instance.start(app)
